@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #f0f0f0; 
+}
+
+.App{
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70rem;
+  margin: 0 auto;
+  row-gap: 2rem;
+
+}
+
+form{
+  width: 80%;
+  max-width: 90%;
+  padding:2rem 1.5rem  !important;
+  background-color: white; 
+  border-radius: 8px;
+}
+
+.task-table-container {
+  width: 80%; 
+  max-width: 90%;
+  padding:2rem 1.5rem  !important;
+  background-color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  overflow-x: auto; 
+}
+
+
+.btn-delete {
+  background-color: #f44336; 
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+.task-counters div {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.tabulator .tabulator-cell {
+  white-space: normal; 
+  word-wrap: break-word;
+  text-align: left; 
+}
+
+.task-counters{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1147px) {
+  .App{
+    
+    width: 95%;
+    
+  
+  }
+}
